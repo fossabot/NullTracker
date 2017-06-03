@@ -19,8 +19,8 @@ var cacheTime = 15; //How many seconds until the cache is sent to MySQL for writ
 var debugLog = true; //If enabled, debug log entries will be shown in the log along with normal entries. If disabled, log will operate normally. Default false.
 
 //Sql
-var sqluser = process.env.OPENSHIFT_MYSQL_USERNAME || "adminQacKr7s";
-var sqlpass = process.env.OPENSHIFT_MYSQL_PASSWORD || "vRSbBkn43s5M";
+var sqluser = process.env.OPENSHIFT_MYSQL_USERNAME || "Admin";    //Do not fear. I don't use Openshift anymore so this
+var sqlpass = process.env.OPENSHIFT_MYSQL_PASSWORD || "password"; //is not a security issue on my part.
 var sqladdress = process.env.OPENSHIFT_MYSQL_DB_HOST || "127.0.0.1";
 var sqlport = process.env.OPENSHIFT_MYSQL_DB_PORT || 45436;
 
