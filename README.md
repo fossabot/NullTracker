@@ -3,5 +3,5 @@ A Node/Javascript based torrent tracker that I wrote. This is UNTESTED and for t
 
 Some ideas I have:
 
-- Connect to other trackers if this tracker can't serve the request.
+- Connect to other trackers if this tracker can't serve the request. This can be done by manually adding trackers to a list, or scraping sites for trackers and testing them. I'm not sure if I would just randomly pick a tracker to ask for or try multiple and combine them. This tracker may just turn into a proxy if I do that though.
 - Improve speed
