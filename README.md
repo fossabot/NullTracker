@@ -10,6 +10,7 @@ Features:
 Work In Progress:
 
 - Stats
+- Modularization (server.js is very messy right now and I would like to seperate all the sections out into different files for easy editing.)
 
 Planned Features:
 
