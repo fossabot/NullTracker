@@ -13,7 +13,7 @@ cfg.sqluser = "tracker"; 	//I recommend you make a user and give it full permiss
 cfg.sqlpass = "PASSWORD";	//CreateDatabase SQL file expects a 'tracker@localhost' user for the pruning event. https://go.nullrebel.com/sqlpass will take you to a secure password generator @ Random.org
 cfg.sqladdress = "127.0.0.1";
 cfg.sqlport = 3306;
-cfg.database = 'tracker';	//The included CreateDatabase SQL file will create the database 'tracker'.
+cfg.database = 'tracker';				//The included CreateDatabase SQL file will create the database 'tracker'.
 
 //Tracker Specific
 cfg.numwantlimit = 30; // Limit to the amount of peers the tracker will send at a time.
