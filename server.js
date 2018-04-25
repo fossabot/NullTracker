@@ -8,8 +8,6 @@ var mysql = require('mysql');
 var bencoder = require('bencode');
 var mysql = require('mysql');
 var reqIp = require('request-ip');
-//VARIABLES
-
 var cfg = require('./config.js');
 	cfg.version = 1.00;
 
@@ -22,19 +20,6 @@ var newSQLConnection = function() {
         database: cfg.database
     });
 };
-
-
-
-
-
-// connection.connect();
-//
-// connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
-//   if (error) throw error;
-//   postLog('The solution is: ', results[0].solution);
-// });
-//
-// connection.end();
 
 
 /*

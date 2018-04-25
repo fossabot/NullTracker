@@ -1,6 +1,8 @@
 # Node-Tracker
 A Node/Javascript based torrent tracker running on SQL.
 
+Live Version: http://tracker.nullrebel.com:1337/announce
+
 Features:
 
 - Announce
