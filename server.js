@@ -330,7 +330,7 @@ var announce = function(req, res) {
         if (peerlimit > cfg.numwantlimit) peerlimit = cfg.numwantlimit;
         if (peerlimit < 0) peerlimit = 0;
 
-        connection.query("SELECT * FROM tracker.torrents WHERE info_hash='" + par.info_hash + "' LIMIT " + peerlimit + "", function(error, results, fields) {
+        connection.query("SELECT * FROM tracker.torrents WHERE info_hash='" + par.info_hash + "' AND event != stopped AND event != paused LIMIT " + peerlimit + "", function(error, results, fields) {
 
             var response = {};
             response.complete = 0;
