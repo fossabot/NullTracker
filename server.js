@@ -8,8 +8,19 @@ var mysql = require('mysql');
 var bencoder = require('bencode');
 var mysql = require('mysql');
 var reqIp = require('request-ip');
+const exitHook = require('exit-hook');
 var cfg = require('./config.js');
 	cfg.version = 1.00;
+
+	
+	
+	
+exitHook(() =>
+	{
+		//I use nodemon for development, so the cache needs to be flushed before exit.
+		doCacheWork();
+	
+	});
 
 var newSQLConnection = function() {
     return mysql.createConnection({
