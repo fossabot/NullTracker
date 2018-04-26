@@ -5,12 +5,12 @@
   "keywords": [],
   "author": {
     "name": "Stephen Barlow",
-    "email": "rebelboy11@live.com"
+    "email": "reb@nullrebel.com"
   },
-  "homepage": "http://tracker-rebl.rhcloud.com",
+  "homepage": "http://tracker.nullrebel.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/NullRebel/Node-Tracker"
   },
   "engines": {
     "node": ">= 0.6.0",
@@ -25,6 +25,6 @@
   },
   "devDependencies": {},
   "bundleDependencies": [],
-  "private": true,
+  "private": false,
   "main": "server.js"
 }
