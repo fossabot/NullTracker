@@ -17,7 +17,7 @@ cfg.database = 'tracker';				//The included CreateDatabase SQL file will create 
 
 //Tracker Specific
 cfg.numwantlimit = 30; // Limit to the amount of peers the tracker will send at a time.
-
+cfg.serverIp = "0.0.0.0"; //Server IP or Domain name. Only required if you have a torrent client running on the same machine as the tracker.
 
 
 module.exports = cfg;

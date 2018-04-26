@@ -83,7 +83,7 @@ module.exports.announce = function(req, res) {
         if (peerlimit > cfg.numwantlimit) peerlimit = cfg.numwantlimit;
         if (peerlimit < 0) peerlimit = 0;
 
-        connection.query("SELECT * FROM tracker.torrents WHERE info_hash=" + mysql.escape(par.info_hash) + " AND event != 'stopped' AND 'event' != paused LIMIT " + peerlimit + "", function(error, results, fields) {
+        connection.query("SELECT * FROM tracker.torrents WHERE info_hash=" + mysql.escape(par.info_hash) + " AND event != 'stopped' AND port != 0 LIMIT " + peerlimit + "", function(error, results, fields) {
 
 
             var response = {};
@@ -146,6 +146,7 @@ var announceGetParameters = function (req) {
     ret.no_peer_id 	= 	req.query.no_peer_id;
     ret.event 		=	req.query.event || "started";
     ret.ip 			=	req.query.ip || reqIp.getClientIp(req);
+		if (ret.ip == "127.0.0.1" || ret.ip == "localhost") ret.ip = cfg.serverIP;
     ret.numwant 	=	req.query.numwant;
     ret.trackerid 	= 	req.query.trackerid;
 
