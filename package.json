@@ -1,5 +1,5 @@
 {
-  "name": "NullTracker",
+  "name": "nulltracker",
   "version": "1.0.0",
   "description": "A lightweight but featured NodeJS+SQL torrent tracker.",
   "keywords": [],
