@@ -6,14 +6,15 @@ Live Version: http://tracker.nullrebel.com:1337/announce
 Features:
 
 - Announce
-- Write Delay (inserts/updates are grouped together then executed at an interval.)
+- Write Delay (inserts/updates are grouped together then executed at an interval. Helps mainly when opening new connections is expensive [such as an offsite sql server])
 
 
 Work In Progress:
 
 - Stats
-- Modularization (server.js is very messy right now and I would like to seperate all the sections out into different files for easy editing.)
 
 Planned Features:
 
 - Scrape
+- PeerBan (ban peers that send requests far too frequently)
+- Intelligent Peer Responses (sends peers sorted by completion % to ensure new peers have access to as much of the torrent as possible.)
