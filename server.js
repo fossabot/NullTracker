@@ -22,7 +22,7 @@ var func 	= require('./modules/functions.js');
 var ann 	= require('./modules/announce.js');
 var scr 	= require('./modules/scrape.js');
 var cache	= require('./modules/cache.js');
-var stats	= require('./modules/stats.js');
+var st		= require('./modules/stats.js');
 
 
 //Web Stuff
