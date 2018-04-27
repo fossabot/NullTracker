@@ -17,4 +17,3 @@ Planned Features:
 
 - Scrape
 - PeerBan (ban peers that send requests far too frequently)
-- Intelligent Peer Responses (sends peers sorted by completion % to ensure new peers have access to as much of the torrent as possible.)

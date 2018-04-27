@@ -13,8 +13,11 @@ var cfg = require('./config.js');
 exitHook(() =>
 	{
 		//I use nodemon for development, so the cache needs to be flushed before exit.
+		func.postLog('Exit caught. Flushing cache.',"CACHE");
 		cache.doCacheWork();
-	
+		
+		
+		func.postLog('Cache flushed. Shutting Down.');	
 	});
 
 //Load Modules
