@@ -1,8 +1,8 @@
 //This module handles stats.
 
-module.exports.stats = function (req,res) {
-	var statstemplate = 
-`
+module.exports.stats = function (req, res) {
+	var statstemplate =
+		`
 	<html>
 		<head>
 			
@@ -11,7 +11,7 @@ module.exports.stats = function (req,res) {
 			<p>This is the future home of the stats page. Check back soon!</p>
 		</body>
 	</html>
-`;
-	
+		`;
+
 	res.send(statstemplate);
 }
