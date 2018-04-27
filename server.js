@@ -1,4 +1,5 @@
- # !/bin/envnode
+
+
 
 //LIBRARIES
 var express = require('express');
@@ -38,6 +39,6 @@ tracker.listen(cfg.port, cfg.ipaddress, function () {
 	func.postLog('Tracker started.');
 	if (cfg.debugLog) {
 		func.postLog('Debugging is enabled. Debugs will appear like this:');
-		func.postLog('This is a debugging statement, and is likely very nasty--consisting mostly of raw data', "ANNOUNCE", 1);
+		func.postLog('This is a debugging statement, and is likely very nasty, consisting mostly of raw data', "ANNOUNCE", 1);
 	}
 });
