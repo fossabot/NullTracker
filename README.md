@@ -1,4 +1,6 @@
 # NullTracker
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNullRebel%2FNullTracker.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FNullRebel%2FNullTracker?ref=badge_shield)
+
 A Node/Javascript based torrent tracker running on SQL.
 
 Live Version: http://tracker.nullrebel.com:1337/announce
@@ -17,3 +19,7 @@ Planned Features:
 
 - Scrape
 - PeerBan (ban peers that send requests far too frequently)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNullRebel%2FNullTracker.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FNullRebel%2FNullTracker?ref=badge_large)
